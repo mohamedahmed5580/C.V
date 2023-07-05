@@ -16,7 +16,6 @@ a:hover{
 p{
     margin: 0px;
     padding: 0px;
-    /* text-align: center; */
 }
 .card{
     border-radius: 20px;
@@ -41,11 +40,10 @@ p{
     border: none;
 }
 .text-white .card-header .sh{
-    /* display: flex; */
-    /* margin-left: 100px; */
+    display: flex;
+    margin-left: 100px;
     font-size: small;
     font-weight: 50;
-    text-align: center;
 }
 .b{
     text-align: center;
@@ -194,7 +192,7 @@ p{
     }
     .card{
       display: block;
-      width:330px;
+      width:400px;
       margin: auto;
       margin-top: 20px;
     }
@@ -202,11 +200,11 @@ p{
       margin-left: 15px;
     }
     .b{
-      font-size: large;
+      font-size:x-large;
       }
       
     .img_heder{
-      margin-left: 30px;
+      margin-left: 70px;
     }
     .card-body{
       margin-left: 20px;
