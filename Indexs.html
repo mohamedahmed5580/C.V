@@ -11,17 +11,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<!-- Start Card -->
   <div class="card text-white bg-dark mb-3 fixed-top" style="max-width: 30rem;">
     <div class="card-header">
     <p class="b">Mohamed Ahmed <div class="sh">Designer & Developer</div></p>
-    <img class="img_heder" src="image/profile.jpg" alt="">
     </div>
     <div class="card-body">
+    <img class="img_heder" src="image/profile.jpg" alt="">
       <h5 class="card-title ">mohamed.5580.558@gmail.com</h5>
       <p class="card-text">Base in Cairo ,Egypt</p>
       <p class="card-text bs">@ 2023 Mohamed-Ahmed.</p>
-
     <div class="iconss">
       <a href="https://www.facebook.com/mohamed.beko.90857/"><i class="fa-brands fa-facebook fa-beat fa-xl"></i></a>
       <a href="https://www.instagram.com/mohamed_beko558/"><i class="fa-brands fa-instagram fa-beat fa-xl"></i></a>
@@ -38,37 +37,46 @@
       <i class="fa-regular fa-envelope"></i> Contact Me!
     </a>
     </div>
-    
 </div>  
-<div class="nav flex-column nav-pills  btnnn fixed-top" id="v-pills-tab" role="tablist" aria-orientation="vertical" >
-  <button class="nav-link active" id="v-pills-home-tab" data-text="Home" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true" aria-label="homepage"><i class="fa-solid fa-house" ></i></button></abbr>
-  <button class="nav-link" id="v-pills-profile-tab" data-text="Profile" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fa-regular fa-user"></i></button>
-  <button class="nav-link" id="v-pills-messages-tab" data-text="Home" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fa-solid fa-envelope"></i></button>
-  <button class="nav-link" id="v-pills-settings-tab" data-text="Home" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fa-solid fa-gear"></i></button>
+<!-- end Card -->
+
+
+<!-- Start Navbar -->
+<div class="nav flex-column nav-pills scroll-nav fixed-top btn-group " id="v-pills-tab" role="tablist" aria-label="Basic radio toggle button group" >
+  <a class="menu " type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-bars"></i></a>
+  <a class="nav-link " href="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-house" ></i></a>
+  <a class="nav-link " href="#v-pills-profile"   type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="fa-regular fa-user"></i></a>
+  <a class="nav-link" href="#v-pills-messages"  type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false" ><i class="fa-solid fa-envelope"></i></a>
+  <a class="nav-link" href="#v-pills-settings" aria-selected="true" role="tab" ><i class="fa-solid fa-gear"></i></a>
 </div>
 
 <div class="d-flex">
   <div class="tab-content" id="v-pills-tabContent">
-    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" >
-      
-    </div>
-    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-      Use the tab JavaScript plugin—include it individually or through the compiled bootstrap.js file—to extend our navigational tabs and pills to create tabbable panes of local content.
+    <div class="tab-pane  show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" >
+      <!-- start home page   -->
+      <div class="namev Home_page" id="pills-home">
+        <h1 class="Home"><i class="fa-solid fa-house" ></i> Home</h1>
+        <h2 class="scroll-animation" data-animation="fade_from_bottom" style="opacity: 1; transform: translate(0px, 0px);">Say Hi from <span>Drake</span>, Framer Designer and Developer</h1>
+      </div>
 
-      Dynamic tabbed interfaces, as described in the WAI ARIA Authoring Practices, require role="tablist", role="tab", role="tabpanel", and additional aria- attributes in order to convey their structure, functionality and current state to users of assistive technologies (such as screen readers). As a best practice, we recommend using ed interfaces should not contain dropdown menus, as this causes both usability and accessibility issues. From a usability perspective, the fact that the currently displayed tab’s trigger element is not immediately visible (as it’s inside the closed dropdown menu) can cause confusion. From an accessibility point of view, there is currently no sensible way to map this sort of construct to a standard WAI ARIA pattern, meaning that it cannot be easily made understandable to users of assistive technologies.
-    </div>
-    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-      ...
-    </div>
-    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-      ...
+      <!-- start Profile page   -->
+      <div class="namev Profile_page" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+        <h1 class="Profile"><i class="fa-regular fa-user"></i> Profile</h1>
+      </div>
+      <!-- start Massges page   -->   
+      <div class="namev Massges_page" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+        <h1 class="Massges"><i class="fa-solid fa-envelope" ></i> Massges</h1>
+      </div>
+      <!-- start Setting page   -->
+      <div class="namev Setting_page" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+        <h1 class="Setting"><i class="fa-solid fa-gear" ></i> Setting</h1>
+      </div>
+
     </div>
   </div>
 
 </div>
-
-
-
+<!-- end Navbar -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
 
