@@ -314,26 +314,43 @@ text-align: center;
 .say_hi span{
   color: #e4af12;
 }
-.scroll-animation {
-  max-width: 480px;
-  margin-bottom: 31px;
+.spiin .arrow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -110px;
+  margin-left: auto;
+  margin-right: 70px;
+  font-size: 50px;
+  color: rgba(192, 191, 191, 0.933);
+
 }
 .to_project{
   width: 175px;
   height: 175px;
   display: flex;
-  background-image: url(image/round-text.png);
-  background-position: center;
-  background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
   margin-left: auto;
   border-radius: 100%;
   border: 1px solid #575757;
+  padding: 5px;
   margin-right: 5px;
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }
 .to_project i{
-  animation: rotating 6s infinite linear;
+  
   color: #fff;
   
 }
