@@ -398,6 +398,7 @@ p{
     width: 90%;
   }
   .img_heder{
+    display: block;
     width: 210px;
     border-radius: 15px;
     padding: 10px;
