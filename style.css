@@ -22,7 +22,7 @@ p{
   border-radius: 20px;
   padding: 5px;
   margin: 25px;
-  width: 320px;
+  width: 400px;
   height: 500px;
   box-shadow: 0px 0px 2px #fffe;
 }
@@ -34,14 +34,14 @@ p{
   width: 210px;
   border-radius: 15px;
   padding: 10px;
-  margin-left: 35px;
+  margin-left: 75px;
 }
 .card-header {
   /* padding: 0.5rem 1rem; */
   border: none;
 }
 .text-white .card-header .sh{
-text-align: center;  
+  text-align: center;  
   font-size: small;
   font-weight: 50;
 }
@@ -92,7 +92,7 @@ text-align: center;
   overflow: hidden;
   transition: .5s;
   margin-top: 15px;
-  margin-left: 35px;
+  margin-left:70px;
   letter-spacing: 3px
 }
 
@@ -186,36 +186,7 @@ text-align: center;
   }
 }
 
-@media (max-width: 720px) {
 
-  .nav-pills {
-    display: none;
-  }
-  .tab-content {
-    display: none;
-
-  }
-  .card{
-    display: block;
-    width:350px;
-    margin: auto;
-    margin-top: 20px;
-  }
-  .card-header{
-    margin-left: 15px;
-  }
-  .b{
-    font-size:x-large;
-    }
-
-  .card-body{
-    margin-left: 20px;
-  }
-
-
-
-  
-}
 .nav-pills {
   text-align: center;
   box-shadow: 0px 0px 3px rgba(211, 211, 211, 0.933) ;
@@ -242,10 +213,7 @@ text-align: center;
   color: #e4af12;;
 
 }
-.nav-pills .nav-link::after{
 
-  
-}
 .nav-pills .nav-link.active{
   background-color:#1f1f21 ; 
 }
@@ -253,9 +221,9 @@ text-align: center;
   color: #fff;
 }
 .tab-content {
-  width: 65%;
+  width: 60%;
   margin-top:30px;
-  margin-left: 390px;
+  margin-left: 500px;
 }
 .menu{
   display: flexbox;
@@ -277,24 +245,30 @@ text-align: center;
 }
 
 
-.namev{
+.name_pages{
   color:rgba(192, 191, 191, 0.933);
   background-color:#1f1f21 ;
   border-radius: 10px; 
   padding: 10px;
+  margin-top: 60px;
   
-
-
+  
 }
-.namev .names_page{
-  display: block;
-  border-radius: 50px; 
-  font-size:smaller;
-  box-shadow: 0px 0px 3px rgba(211, 211, 211, 0.933) ; 
-  padding: 5px;
-  text-align: center;
-  width: 100px;
-  text-align: center;
+.name_pages .names_page{
+  display: inline-flex;
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0;
+  border: 1px solid #565656;
+  padding: 9px 20px;
+  border-radius: 30px;
+  align-items: center;
+  
+}
+.name_pages .names_page i{
+  margin-right:10px;
 }
 .Profile_page ,.Massges_page, .Setting_page{
   margin-top: 10%;
@@ -314,14 +288,15 @@ text-align: center;
 .say_hi span{
   color: #e4af12;
 }
+
 .spiin .arrow{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -110px;
+  margin-top: -120px;
   margin-left: auto;
-  margin-right: 70px;
-  font-size: 50px;
+  margin-right: 90px;
+  font-size: 30px;
   color: rgba(192, 191, 191, 0.933);
 
 }
@@ -329,8 +304,6 @@ text-align: center;
   width: 175px;
   height: 175px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   margin-left: auto;
   border-radius: 100%;
   border: 1px solid #575757;
@@ -356,4 +329,93 @@ text-align: center;
 }
 .to_project .fa-rotate-90{
   color: #fff;
+}
+.spiin a{
+  width: 5px;
+  
+}
+.facts {
+  gap: 100px;
+  margin-top: 50px;
+}
+
+.facts .left h1 {
+  /* margin-top:500px; */
+  font-size: 72px;
+  color: #28e98c;
+  line-height: 56px; 
+
+}
+
+
+.facts .left p {
+  margin-left: 10px;
+
+}
+
+.facts .right h1 {
+  font-size: 72px;
+  color: #28e98c;
+  line-height: 56px;
+
+}
+
+.facts .right p {
+  margin-left: 1px;
+
+}
+.square {
+  height: 130px;
+  width: 130px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.14) !important;
+  margin: 20px;
+  text-align: center;
+  padding-top: 50px;
+  background-color: #fbfbfb;
+}
+.collapse{
+  display: none;
+}
+@media (max-width: 720px) {
+
+  .nav-pills {
+    display: none;
+  }
+  .tab-content {
+    margin-left: 0px;
+    margin-top: 120%;
+    width: 100%;
+  }
+  .say_hi{
+    font-size: 28px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 100px;
+  }
+  .card{
+    position: absolute;
+    width: 90%;
+  }
+  .img_heder{
+    width: 210px;
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 80px;
+  }
+  .card .a1{
+    margin-left: 50px;
+  }
+
+  .b{
+    font-size:x-large;
+    }
+
+  .card-body{
+    margin-left: 20px;
+  }
+
+
+
+  
 }
