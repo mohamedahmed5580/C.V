@@ -3,16 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>C.V</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.css.map">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/all.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
+<body >
+  <!-- start nav phone -->
+  <nav class="  navbar navbar-dark bg-dark ">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler btn-toggle " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="nav flex-column nav-pills scroll-nav fixed-top btn-group " id="v-pills-tab" role="tablist" aria-label="Basic radio toggle button group" >
+          <li class="nav-item"><a class="nav-link nav-tab" href="#home" type="button" ><i class="fa-solid fa-house" ></i></a></li>
+          <li class="nav-item"><a class="nav-link " href="#v-pills-profile" type="button" ><i class="fa-regular fa-user"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#v-pills-messages"  type="button" ><i class="fa-solid fa-envelope"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#v-pills-settings"  ><i class="fa-solid fa-gear"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- end nav phone -->
+
 <!-- Start Card -->
   <div class="card text-white bg-dark mb-3 fixed-top" style="max-width: 30rem;">
     <div class="card-header">
@@ -41,32 +66,21 @@
     </div>
 </div>  
 <!-- end Card -->
-<!-- start nav phone -->
 
-<!-- end nav phone -->
-
-<!-- Start Navbar -->
-<div class="nav flex-column nav-pills scroll-nav fixed-top btn-group " id="v-pills-tab" role="tablist" aria-label="Basic radio toggle button group" >
-  <a class="nav-link " href="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-house" ></i></a>
-  <a class="nav-link " href="#v-pills-profile"   type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="fa-regular fa-user"></i></a>
-  <a class="nav-link" href="#v-pills-messages"  type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false" ><i class="fa-solid fa-envelope"></i></a>
-  <a class="nav-link" href="#v-pills-settings" aria-selected="true" role="tab" ><i class="fa-solid fa-gear"></i></a>
-</div>
-
-<div class="tab-content" id="v-pills-tabContent">
+<div class="tab-content content"  id="v-pills-tabContent">
   <div class="tab-pane  show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" >
     <!-- start home page   -->
-    <div class="name_pages Home_page" id="pills-home">
-      <h1 class="names_page"><i class="fa-solid fa-house" ></i>INTRODUCE</h1>
+    <div class="name_pages  Home_page" data-aos="zoom-in" id="home">
+      <h1 class="names_page"><i class="fa-solid fa-house" ></i>INTRODUCION</h1>
       <h2 class="say_hi"  >
         Hi I'm <span>Mohamed</span>,  Web Designer and App Dveloper
       </h1>
 
-      <p class="" data-aos="zoom-out" >
+      <p class="" data-aos="zoom-in" >
           I design and code beautifully simple things and i love what i do. Just simple like that! .
       </p>
 
-      <div class="spiin" data-aos="zoom-in-up" >
+      <div class="spiin" data-aos="zoom-in" >
           <img class="to_project" src="image/round-text.png" alt="">
           <a class="arrow" href="#ennd"><i class="fa-solid fa-arrow-right fa-rotate-90 fa-2xl "></i></a>
       </div>
@@ -84,9 +98,9 @@
 
     <!-- start Profile page   -->
     <div class="name_pages Profile_page" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-      <h1 class="names_page"><i class="fa-regular fa-user"></i> Profile</h1>
+      <h1 class="names_page"  ><i class="fa-regular fa-user"></i> Profile</h1>
       
-      <h2 class="say_hi"  style="opacity: 1; transform: translate(0px, 0px);">
+      <h2 class="say_hi"  >
         Hi I'm <span>Mohamed</span>,  Web Designer and App Dveloper
       </h1>
 
@@ -135,7 +149,7 @@
     <div class="name_pages Setting_page" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
       <h1 class="names_page"><i class="fa-solid fa-gear" ></i> Setting</h1>
       
-      <h2 class="say_hi"  style="opacity: 1; transform: translate(0px, 0px);">
+      <h2 class="say_hi">
         Hi I'm <span>Mohamed</span>,  Web Designer and App Dveloper
       </h1>
 
@@ -166,6 +180,10 @@
     <script src="js/all.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 
 </body>
