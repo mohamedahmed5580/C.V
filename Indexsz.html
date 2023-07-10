@@ -3,33 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>C.V</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.css.map">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/all.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
+<body >
+  <!-- start nav phone -->
+  <nav class="  navbar navbar-dark bg-dark ">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="#"></a>
+
+    <button class="navbar-toggler btn-toggle  nav-l" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav flex-column nav-pills scroll-nav fixed-top btn-group " id="v-pills-tab" role="tablist" aria-label="Basic radio toggle button group" >
+          <li class="nav-item"><a class="nav-link nav-tab" href="#home" type="button" ><i class="fa-solid fa-house" ></i></a></li>
+          <li class="nav-item"><a class="nav-link " href="#v-pills-profile" type="button" ><i class="fa-regular fa-user"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#v-pills-messages"  type="button" ><i class="fa-solid fa-envelope"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#v-pills-settings"  ><i class="fa-solid fa-gear"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- end nav phone -->
+
 <!-- Start Card -->
   <div class="card text-white bg-dark mb-3 fixed-top" style="max-width: 30rem;">
     <div class="card-header">
-    <p class="b">Ziad Ahmed <div class="sh"></div></p>
+    <p class="b">Mohamed Ahmed <div class="sh">Designer & Developer</div></p>
     </div>
     <div class="card-body">
-    <img class="img_heder" src="image/profilez.jpg" alt="">
-      <h5 class="card-title ">bekommz@gmail.com</h5>
+    <img class="img_heder" src="image/profile.jpg" alt="">
+      <h5 class="card-title ">mohamed.5580.558@gmail.com</h5>
       <p class="card-text">Base in Cairo ,Egypt</p>
-      <p class="card-text bs">@ 2023 Ziad-Ahmed.</p>
+      <p class="card-text bs">@ 2023 Mohamed-Ahmed.</p>
     <div class="iconss">
-      <a href="https://www.facebook.com/profile.php?id=100005473154916&mibextid=ZbWKwL"><i class="fa-brands fa-facebook fa-beat fa-xl"></i></a>
-      <a href="https://instagram.com/zivd.ahmxd1?igshid=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-instagram fa-beat fa-xl"></i></a>
+      <a href="https://www.facebook.com/mohamed.beko.90857/"><i class="fa-brands fa-facebook fa-beat fa-xl"></i></a>
+      <a href="https://www.instagram.com/mohamed_beko558/"><i class="fa-brands fa-instagram fa-beat fa-xl"></i></a>
       <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin"><i class="fa-brands fa-twitter fa-beat fa-xl" ></i></a>
-      <a href="#"><i class="fa-brands fa-whatsapp fa-beat fa-xl"></i></a>
-      <a href="#"><i class="fa-brands fa-linkedin fa-beat fa-xl" ></i></a>
-      <a href="#"><i class="fa-brands fa-github fa-beat fa-xl" ></i></a>
+      <a href="https://wa.me/qr/IK44ZY5KVSSHH1"><i class="fa-brands fa-whatsapp fa-beat fa-xl"></i></a>
+      <a href="https://www.linkedin.com/in/mohamed-ahmed-64964a277/"><i class="fa-brands fa-linkedin fa-beat fa-xl" ></i></a>
+      <a href="https://github.com/mohamedahmed5580"><i class="fa-brands fa-github fa-beat fa-xl" ></i></a>
     </div>
-    <a  class="a1" href="mailto:bekommz@gmail.com">
+    <a  class="a1" href="mailto:mohamed.5580.558@gmail.com">
       <span></span>
       <span></span>
       <span></span>
@@ -40,54 +67,124 @@
 </div>  
 <!-- end Card -->
 
+<div class="tab-content content"  id="v-pills-tabContent">
+  <div class="tab-pane  show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" >
+    <!-- start home page   -->
+    <div class="name_pages Home_page"  id="home">
+      <h1 class="names_page"><i class="fa-solid fa-house" ></i>INTRODUCION</h1>
+      <h2 class="say_hi" data-aos="zoom-in"  >
+        Hi I'm <span>Mohamed</span>,  Web Designer and App Dveloper
+      </h1>
 
-<!-- Start Navbar -->
-<div class="nav flex-column nav-pills scroll-nav fixed-top btn-group " id="v-pills-tab" role="tablist" aria-label="Basic radio toggle button group" >
-  <a class="nav-link " href="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-house" ></i></a>
-  <a class="nav-link " href="#v-pills-profile"   type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="fa-regular fa-user"></i></a>
-  <a class="nav-link" href="#v-pills-messages"  type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false" ><i class="fa-solid fa-envelope"></i></a>
-  <a class="nav-link" href="#v-pills-settings" aria-selected="true" role="tab" ><i class="fa-solid fa-gear"></i></a>
-</div>
+      <p class="" data-aos="zoom-in" >
+          I design and code beautifully simple things and i love what i do. Just simple like that! .
+      </p>
 
-<div class="">
-  <div class="tab-content" id="v-pills-tabContent">
-    <div class="tab-pane  show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" >
-      <!-- start home page   -->
-      <div class="namev Home_page" id="pills-home">
-
-        <h1 class="names_page"><i class="fa-solid fa-house" ></i> Home</h1>
-        <h2 class="say_hi"  style="opacity: 1; transform: translate(0px, 0px);">
-          Hi I'm <span>Ziad</span>
-        </h1>
-
-        <p class="scroll-animation" data-animation="fade_from_bottom" style=" opacity: 1;  transform: translate(0px, 0px); ">
-            I design and code beautifully simple things and i love what i do. Just simple like that!
-        </p>
-        <a class="to_project" href="http://">
-          <i class="fa-solid fa-arrow-right fa-rotate-90 fa-2xl"></i>
-        </a>
+      <div class="spiin" data-aos="zoom-in" >
+          <img class="to_project" src="image/round-text.png" alt="">
+          <a class="arrow" href="#ennd"><i class="fa-solid fa-arrow-right fa-rotate-90 fa-2xl "></i></a>
+      </div>
+      <div class="facts d-flex">
+        <div class="left" >
+            <h1 data-aos="fade-right">7+</h1>
+            <p data-aos="fade-up">Years of <br>Experience</p>
         </div>
+        <div class="right " >
+            <h1 data-aos="fade-left">52+</h1>
+            <p data-aos="fade-left">Projects<br> completed </p>
+        </div>
+    </div>
+    </div>
 
-      <!-- start Profile page   -->
-      <div class="namev Profile_page" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-        <h1 class="names_page"><i class="fa-regular fa-user"></i> Profile</h1>
-      </div>
-      <!-- start Massges page   -->   
-      <div class="namev Massges_page" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-        <h1 class="names_page"><i class="fa-solid fa-envelope" ></i> Massges</h1>
-      </div>
-      <!-- start Setting page   -->
-      <div class="namev Setting_page" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-        <h1 class="names_page"><i class="fa-solid fa-gear" ></i> Setting</h1>
-      </div>
+    <!-- start Profile page   -->
+    <div class="name_pages Profile_page" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+      <h1 class="names_page"  ><i class="fa-regular fa-user"></i> Profile</h1>
+      
+      <h2 class="say_hi"  >
+        Hi I'm <span>Mohamed</span>,  Web Designer and App Dveloper
+      </h1>
+
+      <p class="" data-animation="fade_from_bottom" style=" opacity: 1;  transform: translate(0px, 0px); ">
+          I design and code beautifully simple things and i love what i do. Just simple like that! .
+      </p>
+
+
+      <div class="facts d-flex">
+        <div class="left scroll-animation" data-aos="fade-up" style="opacity: 1; transform: translate(0px, 0px);">
+            <h1>7+</h1>
+            <p>Years of <br>Experience</p>
+        </div>
+        <div class="right scroll-animation animation-duration: 500ms;" data-animation="fade_from_right" style="opacity: 1; transform: translate(0px, 0px);">
+            <h1>52+</h1>
+            <p>Projects<br> completed </p>
+        </div>
+    </div>
 
     </div>
-  </div>
+    <!-- start Massges page   -->   
+    <div class="name_pages Massges_page" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+      <h1 class="names_page"><i class="fa-solid fa-envelope" ></i> Massges</h1>
+      
+      <h2 class="say_hi"  style="opacity: 1; transform: translate(0px, 0px);">
+        Hi I'm <span>Mohamed</span>,  Web Designer and App Dveloper
+      </h1>
 
+      <p class="" data-animation="fade_from_bottom" style=" opacity: 1;  transform: translate(0px, 0px); ">
+          I design and code beautifully simple things and i love what i do. Just simple like that! .
+      </p>
+
+      <div class="facts d-flex">
+        <div class="left scroll-animation" data-animation="fade_from_left" style="opacity: 1; transform: translate(0px, 0px);">
+            <h1>7+</h1>
+            <p>Years of <br>Experience</p>
+        </div>
+        <div class="right scroll-animation animation-duration: 500ms;" data-animation="fade_from_right" style="opacity: 1; transform: translate(0px, 0px);">
+            <h1>52+</h1>
+            <p>Projects<br> completed </p>
+        </div>
+    </div>
+
+    </div>
+    <!-- start Setting page   -->
+    <div class="name_pages Setting_page" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+      <h1 class="names_page"><i class="fa-solid fa-gear" ></i> Setting</h1>
+      
+      <h2 class="say_hi">
+        Hi I'm <span>Mohamed</span>,  Web Designer and App Dveloper
+      </h1>
+
+      <p class="" data-animation="fade_from_bottom" style=" opacity: 1;  transform: translate(0px, 0px); ">
+          I design and code beautifully simple things and i love what i do. Just simple like that! .
+      </p>
+
+      
+      <div class="facts d-flex">
+        <div class="left scroll-animation" data-animation="fade_from_left" style="opacity: 1; transform: translate(0px, 0px);">
+            <h1>7+</h1>
+            <p>Years of <br>Experience</p>
+        </div>
+        <div class="right scroll-animation animation-duration: 500ms;" data-animation="fade_from_right" style="opacity: 1; transform: translate(0px, 0px);">
+            <h1>52+</h1>
+            <p id="ennd">Projects<br> completed </p>
+        </div>
+    </div>
+
+    </div>
+
+  </div>
 </div>
+
+
 <!-- end Navbar -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
 
 </body>
 </html>
