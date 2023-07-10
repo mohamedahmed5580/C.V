@@ -189,7 +189,7 @@ p{
 }
 
 
-.nav-pills {
+.btns {
   box-shadow: 0px 0px 3px rgba(211, 211, 211, 0.933) ;
   width: 50px;
   margin-top: 100px;
@@ -200,7 +200,7 @@ p{
 
 }
 
-.nav-pills .nav-link{
+.btns .nav-link{
   display: block;
   background-color:#1f1f21 ; 
   color:rgba(192, 191, 191, 0.933);
@@ -210,15 +210,15 @@ p{
 
 }
 
-.nav-pills .nav-tab:hover{
+.btns .nav-tab:hover{
   color: #e4af12;;
 
 }
 
-.nav-pills .nav-tab.active{
+.btns .nav-tab.active{
   background-color:#1f1f21 ; 
 }
-.nav-pills .nav-tab::after{
+.btns .nav-tab::after{
   color: #fff;
 }
 .navbar .btn-toggle{
@@ -388,12 +388,19 @@ p{
 
 @media (max-width: 720px) {
 
-  .nav-pills {
+  .btns {
+    
     margin-top: 100px;
-    margin-right: 25px;
+    margin-right: 50px;
     background-color: #1f1f1f;
   }
-
+  .nav-l{
+    background-color: #1f1f1f;
+    /* position: fixed; */
+    top:0;
+    right: 0;
+    z-index: 1;
+  }
   .card{
     display: flex;
     position: static;
@@ -413,21 +420,13 @@ p{
     justify-content: center; 
     align-items: center;
     margin-left: 0px;
-    margin-top: 0px;
+    margin-top: -5px;
     width: auto;
   }
   .say_hi{
     font-size:xx-large ;
     line-height: 40px;
   }
-  .nav-l{
-    background-color: #1f1f1f;
-    position: fixed;
-    top:0;
-    right: 0;
-    z-index: 28;
-    /* overflow: hidden; */
-    /* transition: .5s; */
-  }
+
 }
   
