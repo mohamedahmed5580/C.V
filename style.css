@@ -474,7 +474,7 @@ p{
   color: #28e98c;
 
 }
-@media (max-width: 720px) {
+@media (max-width: 1080px) {
   .card{
     display: flex;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
