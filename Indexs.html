@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,37 +17,40 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body >
+  <video class="body-overlay" muted="" autoplay="" loop="">
+    <source src="video/video5.mp4" type="video/mp4">
+</video>
   <!-- start nav phone -->
-  <nav class=" navbar navbar-dark bg-dark ">
+  <nav class=" navbar navbar-dark  ">
     <div class="container-fluid fixed-top">
       <a  href="#"></a>
-      <button class="navbar-toggler  btn_margen " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler btn_margen  "  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fa-solid fa-bars fa-xl" ></i>
       </button>
       <div class="collapse navbar-collapse " id="navbarSupportedContent" >
-        <ul class="nav flex-column  nav-pills scroll-nav  btn-group btns active " id="v-pills-tab" >
+        <!-- Start Card -->
+        <ul class="nav flex-column nav-pills scroll-nav  btn-group btns active " id="v-pills-tab" >
           <li class="nav-item "><a class="nav-link nav-tab " href="#home" type="button" ><i class="fa-solid fa-house" ></i></a></li>
-          <li class="nav-item"><a class="nav-link " href="#v-pills-profile" type="button" ><i class="fa-regular fa-user"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="#v-pills-messages"  type="button" ><i class="fa-solid fa-envelope"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="#v-pills-settings"  ><i class="fa-solid fa-gear"></i></a></li>
+          <li class="nav-item"><a class="nav-link nav-tab" href="#v-pills-profile" type="button" ><i class="fa-regular fa-user"></i></a></li>
+          <li class="nav-item"><a class="nav-link nav-tab" href="#v-pills-messages"  type="button" ><i class="fa-solid fa-envelope"></i></a></li>
+          <li class="nav-item"><a class="nav-link nav-tab" href="#v-pills-settings"  ><i class="fa-solid fa-gear"></i></a></li>
         </ul>
+        <!-- end Card -->
       </div>
     </div>
   </nav>
 
 <!-- end nav phone -->
 
-<!-- Start Card -->
  
-<!-- end Card -->
 
 <div class="tab-content content "  id="v-pills-tabContent">
   <div class="tab-pane  show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" >
     <!-- start home page   -->
-    <div class="name_pages Home_page"  id="home">
-      <h1 class="names_page"><i class="fa-solid fa-house" ></i>INTRODUCION</h1>
+    <div class="name_pages Introduction_page"  id="home">
+      <h1 class="names_page"><i class="fa-solid fa-house ml" ></i>INTRODUCION</h1>
 
-      <div class="card text-white bg-dark mb-3 fixed-top" style="max-width: 30rem;">
+      <div class="card mb-3 fixed-top" style="max-width: 30rem;">
         <div class="card-header">
         <p class="b">Mohamed Ahmed <div class="sh">Designer & Developer</div></p>
         </div>
@@ -100,60 +103,50 @@
     </div>
 
     <!-- start Profile page   -->
-    <div class="name_pages Profile_page" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+    <div class="name_pages About_page" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+      <h1 class="names_page"  ><i class="fa-regular fa-user ml"></i> About</h1>
       
-      <h1 class="names_page"  ><i class="fa-regular fa-user"></i> Profile</h1>
-       
+      <h2 class="about"  data-aos="fade-right">
+       Every great design begin with an even <span>better story</span>
+      </h2>
 
-      
-      <h2 class="say_hi"  >
-        Hi I'm <span>Mohamed</span>,  Web Designer and App Dveloper
-      </h1>
+      <p data-aos="fade-left">
+        Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chopsone design problem at a time.
 
-      <p class="" data-animation="fade_from_bottom" style=" opacity: 1;  transform: translate(0px, 0px); ">
-          I design and code beautifully simple things and i love what i do. Just simple like that! .
+
       </p>
-
-
-      <div class="facts d-flex">
-        <div class="left scroll-animation" data-aos="fade-up" style="opacity: 1; transform: translate(0px, 0px);">
-            <h1>7+</h1>
-            <p>Years of <br>Experience</p>
-        </div>
-        <div class="right scroll-animation animation-duration: 500ms;" data-animation="fade_from_right" style="opacity: 1; transform: translate(0px, 0px);">
-            <h1>52+</h1>
-            <p>Projects<br> completed </p>
-        </div>
-    </div>
 
     </div>
     <!-- start Massges page   -->   
-    <div class="name_pages Massges_page" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-      <h1 class="names_page"><i class="fa-solid fa-envelope" ></i> Massges</h1>
+    <div class="name_pages Resume_page" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+      <h1 class="names_page"><i class="fa-solid fa-envelope ml" ></i> RESUME</h1>
       
-      <h2 class="say_hi"  style="opacity: 1; transform: translate(0px, 0px);">
-        Hi I'm <span>Mohamed</span>,  Web Designer and App Dveloper
-      </h1>
-
-      <p class="" data-animation="fade_from_bottom" style=" opacity: 1;  transform: translate(0px, 0px); ">
-          I design and code beautifully simple things and i love what i do. Just simple like that! .
-      </p>
-
-      <div class="facts d-flex">
-        <div class="left scroll-animation" data-animation="fade_from_left" style="opacity: 1; transform: translate(0px, 0px);">
-            <h1>7+</h1>
-            <p>Years of <br>Experience</p>
+      <h2 class="about" data-aos="fade-up" >
+        Education & <span> Experience</span>
+      </h2>
+      <div class="resume-timeline">
+        <div class="item scroll-animation" data-aos="fade-right">
+            <span class="date">2020 - Present</span>
+            <h2>Framer Desinger &amp; Developer</h2>
+            <p>Brunodee Agency</p>
+            <h2>Front-End WordPress Developer</h2>
+            <p>Envato Market</p>
         </div>
-        <div class="right scroll-animation animation-duration: 500ms;" data-animation="fade_from_right" style="opacity: 1; transform: translate(0px, 0px);">
-            <h1>52+</h1>
-            <p>Projects<br> completed </p>
+        <div class="item scroll-animation" data-aos="fade-left">
+            <span class="date">2013 - 2019</span>
+            <h2>Webflow Developer &amp; Co-Founder</h2>
+            <p>Designflow Studio</p>
+            <h2>Web Designer</h2>
+            <p>Freelance</p>
+            <h2>Leader Team of Marketing</h2>
+            <p>AHA Marketing Agency</p>
         </div>
+
     </div>
-
     </div>
     <!-- start Setting page   -->
     <div class="name_pages Setting_page" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-      <h1 class="names_page"><i class="fa-solid fa-gear" ></i> Setting</h1>
+      <h1 class="names_page"><i class="fa-solid fa-gear ml" ></i> Setting</h1>
       
       <h2 class="say_hi">
         Hi I'm <span>Mohamed</span>,  Web Designer and App Dveloper
