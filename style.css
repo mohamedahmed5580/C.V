@@ -512,9 +512,7 @@ p{
     padding: 100px;
     position: static;
     width: auto;
-    /* margin: 25px; */
-    /* margin-left: 10px; */
-    /* margin-right: 400px; */
+
     margin-top: 100px;
     box-shadow: 0px 0px 3px #fffe; 
     text-align: center;
@@ -536,7 +534,7 @@ p{
   }
 
   .say_hi{
-    font-size: 50px ;
+    font-size: 40px ;
     font-weight: 300;
     
     line-height: 60px;
@@ -565,7 +563,17 @@ p{
     margin-right: 20px;
     border-radius: 100%;
   }
+  .About_page .about{
+    font-size: 40px;
+  }
+  .Resume_page .about{
+    font-size: 40px;    
+  }
+  .content .skils_page h2 {
 
+    margin-left: 10px;
+  
+  }
   .btns {
     margin-left: auto;
     margin-top: 100px;
