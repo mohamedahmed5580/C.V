@@ -496,6 +496,7 @@ p{
     justify-content: center; 
     align-items: center;
     padding: 10px;
+    
   }
 
   .content {
@@ -505,6 +506,9 @@ p{
     align-items: center;
     margin-left: 0px;
     margin-top: -50px;
+    width: auto;
+  }
+  .name_pages .names_page i{
     width: auto;
   }
 
@@ -535,14 +539,15 @@ p{
   }
   .btn_margen{
     margin-top:25px;
-    margin-right: 120px;
+    margin-right: 60px;
     border-radius: 100%;
     padding: 10px;
   }
 
   .btns {
     margin-left: auto;
-    margin-right:100px;
+    margin-top: 100px;
+    margin-right:58px;
     margin-top: px;
   }
 }
