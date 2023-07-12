@@ -584,7 +584,11 @@ p{
   }
   .content .skils_page .boxs .box{
     width: 45%;
-    margin-left: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+
   }
 }
 
