@@ -227,7 +227,7 @@ p{
 
 .btns .nav-tab{
   display: block;
-  color:rgba(192, 191, 191, 0.933);
+  color:#c0bfbfee;
   border-radius: 100%;
   padding: 15px;
   font-size: large;
@@ -247,6 +247,10 @@ p{
 
 .navbar .btn-toggle{
   margin-right: 35px;
+}
+.btns .nav-tab img{
+  width: 25px;
+  color: #c5c0c0;
 }
 /* end buttons */
 /* start main content */
@@ -272,6 +276,11 @@ p{
 .name_pages .names_page .ml{
   margin-right:10px;
   font-size: larger;
+}
+.name_pages .names_page img{
+  width: 20px;
+  margin-right: 5px;
+  color: #c5c0c0;
 }
 .About_page,.Resume_page,.skils_page{
   margin-top: 5%;
