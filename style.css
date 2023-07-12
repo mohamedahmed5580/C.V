@@ -13,6 +13,7 @@ body{
   overflow-x: hidden;
   width: 100%;
   height: 100%;
+  padding: 10px;
   scroll-behavior: smooth; 
 }
 
@@ -36,6 +37,7 @@ p{
 .navbar{
   display: none;
 }
+/* start card */
 .card{
   display: flex;
   justify-content: center; 
@@ -54,9 +56,6 @@ p{
 .img_heder{
   width: 210px;
   border-radius: 15px;
-
-
-
 }
 
 .text-white .card-header .sh{
@@ -90,9 +89,7 @@ p{
 .iconss a:hover{
   color:#e4af12;;
 }
-/* .iconss .fa-xl{
-  padding-right: 3px;
-} */
+
 .card .a1{
   width: 210px;
   position: relative;
@@ -198,20 +195,24 @@ p{
     bottom: 100%;
   }
 }
-.btn_margen{
+/* end card */
+/* start button */
+.main_btn{
   margin-top: 30px;
-  margin-right: 50px;
+  margin-right: 25px;
   border-radius: 100%;
   font-size: 20px;
   padding: 12px;
 
 }
-.btn_margen:hover{
+.main_btn:hover{
   color: #e4af12;
   border-color: #e4af12;
-  /* background-color: #e4af12; */
-  
 }
+.main_btn:focus-within{
+  color: #e4af12;
+}
+
 .btns {
   /* background-color: #1f1f1f; */
   box-shadow: 0px 0px 3px rgba(211, 211, 211, 0.933) ;
@@ -219,7 +220,7 @@ p{
   margin-top: 100px;
   border-radius: 40px;
   margin-left: auto;
-  margin-right: 20px;
+  margin-right: 50px;
   font-size: 20px;
  
 }
@@ -234,34 +235,27 @@ p{
 }
 
 .btns .nav-tab:hover{
-  color: #e4af12;;
+  color: #e4af12;
 
 }
+
 
 .btns .nav-tab.active{
-  background-color:#1f1f21 ; 
+  color: #e4af12;
+  background-color:#161616 ; 
 }
-.btns .nav-tab::after{
-  color: #fff;
-}
+
 .navbar .btn-toggle{
   margin-right: 35px;
 }
+/* end buttons */
+/* start main content */
 .content {
   display: block;
-  margin-top:50px;
+  margin-top:20px;
   margin-left: 500px;
 }
 
-
-.name_pages{
-  color:rgba(231, 231, 231, 0.933);
-  border-radius: 10px; 
-  padding: 10px;
-  margin-top: 60px;
-  
-  
-}
 .name_pages .names_page{
   display: inline-flex;
   font-size: 12px;
@@ -279,8 +273,8 @@ p{
   margin-right:10px;
   font-size: larger;
 }
-.Profile_page ,.Massges_page, .Setting_page{
-  margin-top: 10%;
+.About_page,.Resume_page,.skils_page{
+  margin-top: 5%;
 
 }
 .Setting_page{
@@ -414,11 +408,13 @@ p{
     color: #fff;
   }
 
-
+/* stary Resume_page */
 .Resume_page  .item {
     position: relative;
     padding-left: 74px;
     padding-bottom: 68px;
+    color: #e4e4e4;
+    
 }
   
 .Resume_page .item ::before{
@@ -447,6 +443,7 @@ p{
 
 .Resume_page .item .date {
   font-family: 'Inter', sans-serif;
+  color: #c5c0c0;
   display: block;
   margin-bottom: 28px;
   transition: .3s;
@@ -459,11 +456,52 @@ p{
   color: #e4af12;
 
 }
-.Resume_page .item  ::after :hover {
-  background: #e4af12;
-  color: #e4af12;
+/* end Resume_page */
+/* start skils_page */
+.content .skils_page .boxs{
+  display: flexbox;
+  text-align: center !important;
+  margin-top: 40px;
+  
+  
+}
+
+
+.content .skils_page h2{
+  font-size: 48px;
+  font-family: 'Inter', sans-serif;
+  padding-top: 50px;
+  margin-left: 50px;
+  color: #e4e4e4;
+}
+.skils_page h2 span{
+  color: #e4af12 ;
+}
+.content .skils_page .boxs .box{
+  display: inline-block;
+  width: 23%;
+  font-size: 100px;
+  padding: 30px 0 30px 0;
+  border: 2px solid #565656;
+  border-radius: 85px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  transition: .3s;
+}
+.content .skils_page .boxs .box img{
+  width: 90px;
+}
+.content .skils_page .boxs .box:hover{
+  border: 2px solid #e4af12;
+}
+.content .skils_page .boxs .box h5{
+  color:#fff; 
+  font-size: 30px;
+  font-weight: bold;
 
 }
+/* end main content */
+/* start for phone */
 @media (max-width: 768px) {
 
   .card{
@@ -473,10 +511,10 @@ p{
     border-radius: 20px;
     padding: 100px;
     position: static;
-    width: 70%;
-    margin: 25px;
+    width: auto;
+    /* margin: 25px; */
     /* margin-left: 10px; */
-    margin-right: auto;
+    /* margin-right: 400px; */
     margin-top: 100px;
     box-shadow: 0px 0px 3px #fffe; 
     text-align: center;
@@ -492,16 +530,9 @@ p{
   }
 
   .content {
-    display: flex;
-    position: absolute;
-    justify-content: center; 
-    align-items: center;
-    margin-left: 0px;
-    margin-top: -50px;
-    width: auto;
-  }
-  .name_pages .names_page i{
-    width: auto;
+
+    margin-left: 10px;
+
   }
 
   .say_hi{
@@ -531,15 +562,21 @@ p{
   }
   .btn_margen{
     margin-top:25px;
-    margin-right: 223px;
+    margin-right: 20px;
     border-radius: 100%;
-    padding: 10px;
   }
 
   .btns {
     margin-left: auto;
     margin-top: 100px;
-    margin-right:223px;
-    margin-top: px;
+    margin-right:23px;
+  }
+  .About_page,.Resume_page,.skils_page{
+    margin-top: 10%;
+  }
+  .content .skils_page .boxs .box{
+    width: 40%;
   }
 }
+
+/* end phone */
