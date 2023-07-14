@@ -4,14 +4,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --main-color: #e4af12;
+  --secondary-color: #fff;
+  --secondary2-color: #1f1f1f;
+  --section-padding: 60px;
+  --section-background: #adadad;
+  --main-duration: 0.5s;
+}
 body{
   font-family: 'Inter', sans-serif;
   font-size: 16px;
-  color: #999999;
-  background: #1f1f1f;
+  color: var(--section-background);
+  background: var(--secondary2-color);
   line-height: 1.7;
   overflow-x: hidden;
-  width: 100%;
   height: 100%;
   padding: 10px;
   scroll-behavior: smooth; 
@@ -83,11 +90,11 @@ p{
   font-weight: 50;
 }
 .iconss a {
-  color: #fff;
+  color: var(--secondary-color);
   padding: 5px;
 }
 .iconss a:hover{
-  color:#e4af12;;
+  color:var(--main-color);;
 }
 
 .card .a1{
@@ -96,7 +103,7 @@ p{
   display: inline-block;
   padding: 10px 20px;
   font-weight: bold;
-  color: #fff;
+  color: var(--secondary-color);
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -107,8 +114,8 @@ p{
 }
 
 .card .a1:hover {
-  background: #fff;
-  color: #e4af12;;
+  background: var(--secondary-color);
+  color: var(--main-color);;
   border-radius: 5px;
 }
 
@@ -207,11 +214,11 @@ p{
 
 }
 .nav_btn .main_btn:hover{
-  color: #e4af12;
-  border-color: #e4af12;
+  color: var(--main-color);
+  border-color: var(--main-color);
 }
 .nav_btn .main_btn:focus-within{
-  color: #e4af12;
+  color: var(--main-color);
 }
 
 .btns {
@@ -236,13 +243,13 @@ p{
 }
 
 .btns .nav-tab:hover{
-  color: #e4af12;
+  color: var(--main-color);
 
 }
 
 
 .btns .nav-tab.active{
-  color: #e4af12;
+  color: var(--main-color);
   width: 50px;
   height: 50px;
   margin-top: 5px;
@@ -254,7 +261,7 @@ p{
 }
 .btns .nav-tab img{
   width: 25px;
-  color: #c5c0c0;
+  color: var(--section-background);
 }
 /* end buttons */
 /* start main content */
@@ -267,11 +274,11 @@ p{
 .name_pages .names_page{
   display: inline-flex;
   font-size: 12px;
-  color: #ffffff;
+  color: var(--secondary-color);
   text-transform: uppercase;
   font-weight: 300;
   margin: 0;
-  border: 1px solid #565656;
+  border: 1px solid var(--section-background);
   padding: 10px 20px;
   border-radius: 30px;
   align-items: center;
@@ -284,7 +291,7 @@ p{
 .name_pages .names_page img{
   width: 20px;
   margin-right: 5px;
-  color: #c5c0c0;
+  color: var(--section-background);
 }
 .About_page,.Resume_page,.skils_page{
   margin-top: 5%;
@@ -297,18 +304,18 @@ p{
 .say_hi{
   font-size: 78px;
   line-height: 90px;
-  color: #fff;
+  color: var(--secondary-color);
   font-weight: bold;
   margin-top: 50px;
 }
 .say_hi span{
-  color: #e4af12;
+  color: var(--main-color);
 }
 
 .about{
   font-size: 48px;
   line-height: 60px;
-  color: #fff;
+  color: var(--secondary-color);
   font-weight: 300;
   margin-bottom: 33px;
   margin-top: 100px;
@@ -319,7 +326,7 @@ p{
   margin-top:35px;
 }
 .about span{
-  color: #e4af12;
+  color: var(--main-color);
 }
 .spiin .arrow{
   display: flex;
@@ -329,7 +336,7 @@ p{
   margin-left: auto;
   margin-right: 130px;
   font-size: 30px;
-  color: rgba(192, 191, 191, 0.933);
+  color: var(--section-background);
 
 }
 .to_project{
@@ -339,7 +346,7 @@ p{
   display: flex;
   margin-left: auto;
   border-radius: 100%;
-  border: 1px solid #575757;
+  border: 1px solid var(--section-background);
   margin-right: 50px;
   animation-name: spiin;
   animation-duration: 5s;
@@ -356,11 +363,11 @@ p{
 }
 .to_project i{
   
-  color: #fff;
+  color: var(--secondary-color);
   
 }
 .to_project .fa-rotate-90{
-  color: #fff;
+  color: var(--secondary-color);
 }
 .spiin a{
   width: 5px;
@@ -373,7 +380,7 @@ p{
 
 .facts .left h1 {
   font-size: 72px;
-  color: #e4af12;
+  color: var(--main-color);
   line-height: 60px; 
 
 }
@@ -389,7 +396,7 @@ p{
 
 .facts .right h1 {
   font-size: 72px;
-  color: #e4af12;
+  color: var(--main-color);
   line-height: 56px;
 
 }
@@ -408,7 +415,7 @@ p{
   margin: 20px;
   text-align: center;
   padding-top: 50px;
-  background-color: #fbfbfb;
+  background-color: var(--secondary-color);
 }
 .btn-top{
   display: none;
@@ -418,7 +425,7 @@ p{
     background: none;
   }
 .navbar-light .navbar-brand {
-    color: #fff;
+    color: var(--secondary-color);
   }
 
 /* stary Resume_page */
@@ -427,7 +434,7 @@ p{
     position: relative;
     padding-left: 74px;
     padding-bottom: 58px;
-    color: #e4e4e4;
+    color: var(--section-background);
     
 }
   
@@ -457,12 +464,12 @@ p{
 
 .Resume_page .item .date {
   font-family: 'Inter', sans-serif;
-  color: #c5c0c0;
+  color: var(--secondary-color);
   display: block;
   transition: .3s;
 }
 .Resume_page .item:hover .date {
-  color: #e4af12;
+  color: var(--main-color);
 }
 
 /* end Resume_page */
@@ -482,17 +489,17 @@ p{
   font-family: 'Inter', sans-serif;
   padding-top: 50px;
   margin-left: 50px;
-  color: #e4e4e4;
+  color: var(--secondary-color);
 }
 .skils_page h2 span{
-  color: #e4af12 ;
+  color: var(--main-color) ;
 }
 .content .skils_page .boxs .box{
   display: inline-block;
   width: 23%;
   font-size: 100px;
   padding: 30px 0 30px 0;
-  border: 2px solid #565656;
+  border: 2px solid var(--section-background);
   border-radius: 85px;
   margin-bottom: 10px;
   margin-left: 10px;
@@ -502,22 +509,21 @@ p{
   width: 90px;
 }
 .content .skils_page .boxs .box:hover{
-  border: 2px solid #e4af12;
+  border: 2px solid var(--main-color);
 }
 .content .skils_page .boxs .box:hover h5{
-  color:#e4af12 ;
+  color:var(--main-color) ;
 }
+
 .content .skils_page .boxs .box h5{
-  color:#e4e4e4 ;
+  color:var(--secondary-color) ;
   font-size: 30px;
   font-weight: bold;
 }
 /* end main content */
 /* start for phone */
 @media (max-width: 768px) {
-  body{
-    /* width: auto; */
-  }
+
   .card{
     display: flex;
     justify-content: center; 
@@ -603,7 +609,7 @@ p{
   }
 
   .content .skils_page .boxs .box:hover h5{
-    color:#e4af12 ;
+    color:var(--main-color) ;
   }
 }
 
