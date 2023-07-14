@@ -197,7 +197,8 @@ p{
 }
 /* end card */
 /* start button */
-.main_btn{
+
+.nav_btn .main_btn{
   margin-top: 30px;
   margin-right: 25px;
   border-radius: 100%;
@@ -205,11 +206,11 @@ p{
   padding: 12px;
 
 }
-.main_btn:hover{
+.nav_btn .main_btn:hover{
   color: #e4af12;
   border-color: #e4af12;
 }
-.main_btn:focus-within{
+.nav_btn .main_btn:focus-within{
   color: #e4af12;
 }
 
@@ -585,6 +586,7 @@ p{
     margin-left: 10px;
   
   }
+
   .btns {
     margin-left: auto;
     margin-top: 100px;
@@ -601,7 +603,7 @@ p{
     align-items: center;
   }
   .content .skils_page .boxs .box img{
-    width: 130px;
+    width: 120px;
   }
 
   .content .skils_page .boxs .box:hover h5{
