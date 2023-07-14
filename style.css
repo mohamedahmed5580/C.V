@@ -220,7 +220,7 @@ p{
   margin-top: 100px;
   border-radius: 40px;
   margin-left: auto;
-  margin-right: 50px;
+  margin-right: 25px;
   font-size: 20px;
  
 }
@@ -242,7 +242,10 @@ p{
 
 .btns .nav-tab.active{
   color: #e4af12;
-  background-color:#161616 ; 
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  background-color: #1f1f1f;
 }
 
 .navbar .btn-toggle{
@@ -419,9 +422,10 @@ p{
 
 /* stary Resume_page */
 .Resume_page  .item {
+    display: block;
     position: relative;
     padding-left: 74px;
-    padding-bottom: 68px;
+    padding-bottom: 58px;
     color: #e4e4e4;
     
 }
@@ -454,17 +458,12 @@ p{
   font-family: 'Inter', sans-serif;
   color: #c5c0c0;
   display: block;
-  margin-bottom: 28px;
   transition: .3s;
 }
 .Resume_page .item:hover .date {
   color: #e4af12;
 }
-.Resume_page .item :hover  ::before {
-  background: #e4af12;
-  color: #e4af12;
 
-}
 /* end Resume_page */
 /* start skils_page */
 .content .skils_page .boxs{
@@ -477,6 +476,7 @@ p{
 
 
 .content .skils_page h2{
+
   font-size: 48px;
   font-family: 'Inter', sans-serif;
   padding-top: 50px;
@@ -503,11 +503,13 @@ p{
 .content .skils_page .boxs .box:hover{
   border: 2px solid #e4af12;
 }
+.content .skils_page .boxs .box:hover h5{
+  color:#e4af12 ;
+}
 .content .skils_page .boxs .box h5{
-  color:#fff; 
+  color:#e4e4e4 ;
   font-size: 30px;
   font-weight: bold;
-
 }
 /* end main content */
 /* start for phone */
@@ -537,7 +539,7 @@ p{
   }
 
   .content {
-
+    width: auto;
     margin-left: 10px;
 
   }
@@ -592,12 +594,18 @@ p{
     margin-top: 10%;
   }
   .content .skils_page .boxs .box{
-    width: 45%;
+    width: 49%;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     align-items: center;
+  }
+  .content .skils_page .boxs .box img{
+    width: 130px;
+  }
 
+  .content .skils_page .boxs .box:hover h5{
+    color:#e4af12 ;
   }
 }
 
