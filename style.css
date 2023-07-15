@@ -12,6 +12,7 @@
   --section-background: #d3d3d3;
   --main-duration: 0.5s;
 }
+
 body{
   font-family: 'Inter', sans-serif;
   font-size: 16px;
@@ -462,6 +463,7 @@ p{
   z-index: -1;
 }
 
+
 .Resume_page .item .date {
   font-family: 'Inter', sans-serif;
   color: var(--secondary-color);
@@ -471,7 +473,10 @@ p{
 .Resume_page .item:hover .date {
   color: var(--main-color);
 }
-
+.Resume_page .item:hover ::before {
+  background: var(--main-color);
+  color: var(--main-color);
+}
 /* end Resume_page */
 /* start skils_page */
 .content .skils_page .boxs{
