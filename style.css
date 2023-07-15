@@ -20,8 +20,6 @@ body{
   background: var(--secondary2-color);
   line-height: 1.7;
   overflow-x: hidden;
-  height: 100%;
-  padding: 10px;
   scroll-behavior: smooth; 
 }
 
@@ -78,7 +76,6 @@ p{
 }
 .card-title{
   padding: 10px;
-
   font-size: 14px;
 }
 .card-text{
@@ -205,10 +202,12 @@ p{
 }
 /* end card */
 /* start button */
+.nav_btn{
+  margin-right: 25px;
 
+}
 .nav_btn .main_btn{
   margin-top: 30px;
-  margin-right: 25px;
   border-radius: 100%;
   font-size: 20px;
   padding: 12px;
@@ -223,13 +222,12 @@ p{
 }
 
 .btns {
-  /* background-color: #1f1f1f; */
   box-shadow: 0px 0px 3px rgba(211, 211, 211, 0.933) ;
+  display: block;
   width: 50px;
   margin-top: 100px;
   border-radius: 40px;
   margin-left: auto;
-  margin-right: 25px;
   font-size: 20px;
  
 }
@@ -247,8 +245,6 @@ p{
   color: var(--main-color);
 
 }
-
-
 .btns .nav-tab.active{
   color: var(--main-color);
   width: 50px;
@@ -257,9 +253,6 @@ p{
   background-color: #1f1f1f;
 }
 
-.navbar .btn-toggle{
-  margin-right: 35px;
-}
 .btns .nav-tab img{
   width: 25px;
   color: var(--section-background);
@@ -537,11 +530,8 @@ p{
     padding: 100px;
     position: static;
     width: auto;
-
-    margin-top: 100px;
     box-shadow: 0px 0px 3px #fffe; 
     text-align: center;
-    background:fixed;
   }
   .card .iconss {
     display: flex;
@@ -558,7 +548,8 @@ p{
 
   }
   .nav_btn{
-    margin-right: 60px;
+    margin-right: 90px;
+
   }
 
   .say_hi{
@@ -588,7 +579,7 @@ p{
   }
 
   .About_page .about{
-    font-size: 35px;
+    font-size: 30px;
   }
   .Resume_page .about{
     font-size: 40px;    
@@ -599,7 +590,7 @@ p{
   
   }
 
-  .About_page,.Resume_page,.skils_page{
+  .Introduction_page, .About_page,.Resume_page,.skils_page{
     margin-top: 10%;
   }
   .content .skils_page .boxs .box{
