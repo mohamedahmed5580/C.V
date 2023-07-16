@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/all.min.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
@@ -33,6 +32,7 @@
           <li class="nav-item "><a class="nav-link nav-tab " href="#home" type="button" ><i class="fa-solid fa-house" ></i></a></li>
           <li class="nav-item"><a class="nav-link nav-tab" href="#v-pills-profile" type="button" ><i class="fa-regular fa-user"></i></a></li>
           <li class="nav-item"><a class="nav-link nav-tab" href="#v-pills-messages"  type="button" ><i class="fa-solid fa-briefcase"></i></a></li>
+          <li class="nav-item"><a class="nav-link nav-tab" href="#v-pills-Services"  type="button" ><i class="fa-solid fa-rocket ml"></i></a></li>
           <li class="nav-item"><a class="nav-link nav-tab" href="#v-pills-settings"  ><i class="fa-solid fa-brain"></i></a></li>
         </ul>
         <!-- end Card -->
@@ -41,7 +41,7 @@
   </nav>
 
 <!-- end nav phone -->
-<div class="card mb-3 fixed-top" style="max-width: 30rem;">
+<div class="card card-head mb-3 fixed-top" style="max-width: 30rem;">
   <div class="card-header">
   <p class="b">Mohamed Ahmed <div class="sh">Designer & Developer</div></p>
   </div>
@@ -73,13 +73,14 @@
 <div class="content "  id="v-pills-tabContent">
   <div class="tab-pane  show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" >
     <!-- start home page   -->
+    <br>
     <div class="name_pages Introduction_page"  id="home">
       <h1 class="names_page"><i class="fa-solid fa-house ml" ></i>INTRODUCION</h1>
 
       
 
       <h2 class="say_hi" data-aos="zoom-in"  >
-        Hi I'm <span>Mohamed</span>,  Web Designer and App Dveloper
+        Hi I'm <span>Mohamed</span>, Web Designer and App Dveloper
       </h1>
 
       <p class="" data-aos="zoom-in" >
@@ -147,56 +148,70 @@
 
     </div>
     </div>
+    <!-- start SERVICES page   -->   
+    <div class="name_pages Services_page" id="v-pills-Services" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+      <h1 class="names_page"><i class="fa-solid fa-rocket ml"></i> Services</h1>
+      <h2 class="about" data-aos="fade-up" >
+        My <span> Specializations </span>
+      </h2>
+      <div class="card cards_Services">
+        <i class="fa-solid fa-sitemap i"></i>
+        <h2>Website Design</h2>
+        <p>I created digital Design.</p>
+      </div>
+      <div class="card cards_Services">
+        <i class="fa-solid fa-sitemap i"></i>
+        <h2>Development</h2>
+        <p>I created digital Wepsite and Applecation</p>
+      </div>
+    </div>
     <!-- start Setting page   -->
     <div class="name_pages skils_page" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
         <h1 class="names_page"><i class="fa-solid fa-brain ml"></i>  MY SKILLS </h1>
         <h2>My <span>Advantages</span> </h2>
 
         <div class="boxs">
-        <div class="boxs">
-          <div class="box">
+          <div class="box" data-aos="fade-right">
             <img src="image/icons.png" alt="">
             <h5>C++</h5>
           </div>
         
-          <div class="box">
+          <div class="box" data-aos="fade-left">
             <img src="image/python.png" alt="">
             <h5>Python</h5>
           </div>
 
-          <div class="box">
+          <div class="box" data-aos="fade-right">
             <img src="image/dart.png" alt="">
             <h5>Dart</h5>
           </div>
 
-          <div class="box">
+          <div class="box" data-aos="fade-left">
             <img src="image/flutter.png" alt="">
             <h5>Flutter</h5>
           </div>
           
-          <div class="box">
+          <div class="box" data-aos="fade-right">
             <i class="fa-brands fa-html5 " style="color: #f06529;"></i>
             <h5>HTML</h5>
           </div>
         
-          <div class="box">
+          <div class="box" data-aos="fade-left">
             <i class="fa-brands fa-css3-alt" style="color: #156fb0;"></i>
             <h5>CSS</h5>
           </div>
 
-          <div class="box">
+          <div class="box" data-aos="fade-right">
             <i class="fa-brands fa-js" style="color: #f68b33;"></i>
             <h5>JS</h5>
           </div>
 
-          <div class="box">
+          <div class="box" data-aos="fade-right">
             <i class="fa-brands fa-bootstrap" style="color: #6e519a;"></i>
             <h5>Bootstrap</h5>
           </div>
           
       </div>
-
-    </div>
 
     </div>
 
@@ -217,3 +232,5 @@
 
 </body>
 </html>
+
+
