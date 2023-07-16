@@ -44,7 +44,7 @@ p{
   display: none;
 }
 /* start card */
-.card{
+.card-head{
   display: flex;
   justify-content: center; 
   align-items: center;
@@ -56,6 +56,7 @@ p{
   box-shadow: 0px 0px 3px #fffe; 
   text-align: center;
   background:fixed;
+  z-index: 20;
 }
 
 
@@ -95,7 +96,7 @@ p{
   color:var(--main-color);;
 }
 
-.card .a1{
+.card-head .a1{
   width: 210px;
   position: relative;
   display: inline-block;
@@ -111,18 +112,18 @@ p{
 
 }
 
-.card .a1:hover {
+.card-head .a1:hover {
   background: var(--secondary-color);
   color: var(--main-color);;
   border-radius: 5px;
 }
 
-.card .a1 span {
+.card-head .a1 span {
   position: absolute;
   display: block;
 }
 
-.card .a1 span:nth-child(1) {
+.card-head .a1 span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
@@ -141,7 +142,7 @@ p{
   }
 }
 
-.card .a1 span:nth-child(2) {
+.card-head .a1 span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
@@ -161,7 +162,7 @@ p{
   }
 }
 
-.card .a1 span:nth-child(3) {
+.card-head .a1 span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
@@ -181,7 +182,7 @@ p{
   }
 }
 
-.card .a1 span:nth-child(4) {
+.card-head .a1 span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
@@ -287,7 +288,7 @@ p{
   margin-right: 5px;
   color: var(--section-background);
 }
-.About_page,.Resume_page,.skils_page{
+.About_page,.Resume_page,.skils_page,.Services_page{
   margin-top: 5%;
 
 }
@@ -297,10 +298,12 @@ p{
 }
 .say_hi{
   font-size: 78px;
-  line-height: 90px;
+  /* line-height: 90px; */
   color: var(--secondary-color);
   font-weight: bold;
   margin-top: 50px;
+  /* letter-spacing: -0.2px; */
+  font-weight: 300;
 }
 .say_hi span{
   color: var(--main-color);
@@ -311,8 +314,8 @@ p{
   line-height: 60px;
   color: var(--secondary-color);
   font-weight: 300;
-  margin-bottom: 33px;
-  margin-top: 100px;
+  margin-bottom: 53px;
+  margin-top: 50px;
   width: 95%;
 
 }
@@ -471,6 +474,40 @@ p{
   color: var(--main-color);
 }
 /* end Resume_page */
+
+/* start Services_page */
+.Services_page .cards_Services{
+  position: relative;
+  width: 800px;
+  background:fixed;
+  border: 1px solid #565656;
+  border-radius: 20px;
+  transition: .3s;
+  padding: 44px 48px 41px 48px;
+  margin-bottom: 10px;
+  z-index: 20;
+}
+.Services_page .cards_Services h2 {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 8px;
+  color: #fff;
+}
+.Services_page .cards_Services .i {
+  position: absolute;
+  font-size: 30px;
+  color: var(--main-color);
+  right: 50px;
+  top: 45px;
+}
+.Services_page .cards_Services:hover{
+  border-color: var(--main-color);
+  
+}
+.Services_page .cards_Services:hover .i{
+  color: var(--main-color);
+}
+/* end Services_page */
 /* start skils_page */
 .content .skils_page .boxs{
   display: flexbox;
@@ -520,9 +557,9 @@ p{
 }
 /* end main content */
 /* start for phone */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
-  .card{
+  .card-head{
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -530,10 +567,15 @@ p{
     padding: 100px;
     position: static;
     width: auto;
+    margin-top: 100px;
     box-shadow: 0px 0px 3px #fffe; 
     text-align: center;
+    background:fixed;
+    
+
+    
   }
-  .card .iconss {
+  .card-head .iconss {
     display: flex;
     position: static;
     justify-content: center; 
@@ -549,7 +591,6 @@ p{
   }
   .nav_btn{
     margin-right: 90px;
-
   }
 
   .say_hi{
@@ -578,20 +619,21 @@ p{
     font-size: 48px;
   }
 
-  .About_page .about{
-    font-size: 30px;
+  .About_page .about, .Resume_page .about,.Services_page .about{
+    font-size: 35px;
   }
-  .Resume_page .about{
-    font-size: 40px;    
-  }
+
   .content .skils_page h2 {
 
     margin-left: 10px;
   
   }
 
-  .Introduction_page, .About_page,.Resume_page,.skils_page{
+  .About_page,.Resume_page,.Services_page,.skils_page{
     margin-top: 10%;
+  }
+  .Services_page .cards_Services{
+    width: 400px;
   }
   .content .skils_page .boxs .box{
     width: 49%;
@@ -607,6 +649,7 @@ p{
   .content .skils_page .boxs .box:hover h5{
     color:var(--main-color) ;
   }
+
 }
 
 /* end phone */
