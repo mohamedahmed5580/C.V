@@ -85,10 +85,10 @@ p{
 }
 .iconss{
   margin-top: 15px;
+
 }
 .iconss a {
   color: var(--secondary-color);
-  padding: 5px;
 }
 .iconss a:hover{
   color:var(--main-color);;
@@ -566,7 +566,7 @@ p{
     
   }
   .card-head .iconss {
-    padding: 10px;
+    padding: 5px;
     margin-right: 0px;
   }
 
