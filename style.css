@@ -627,7 +627,11 @@ p{
   .content .skils_page .boxs .box img{
     width: 120px;
   }
-
+  .content .skils_page .boxs .box:hover{
+    border: 2px solid var(--main-color);
+    width: 49%;
+    transition: 0.5s;
+  }
   .content .skils_page .boxs .box:hover h5{
     color:var(--main-color) ;
   }
