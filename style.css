@@ -35,9 +35,7 @@ p{
   margin: 0px;
   padding: 0px;
 }
-.navbar{
-  display: none;
-}
+
 /* start card */
 .card-head{
   display: flex;
@@ -292,11 +290,10 @@ p{
 }
 .say_hi{
   font-size: 78px;
-  /* line-height: 90px; */
   color: var(--secondary-color);
   font-weight: bold;
   margin-top: 50px;
-  /* letter-spacing: -0.2px; */
+  letter-spacing: -0.2px;
   font-weight: 300;
 }
 .say_hi span{
@@ -559,14 +556,19 @@ p{
   }
   .card-head{
     position: relative;
-    margin-top: 70px;
-    width: 380px;
-    margin: auto;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+
   }
   .card-head .iconss {
     margin-right: 0px;
   }
 
+  .navbar .nav-btn{
+    display: block;
+    /* margin-right:500px; */
+  }
   .content {
     margin-left: 10px;
   }
@@ -589,7 +591,7 @@ p{
   .facts{
     display: flex;
     justify-content: center;
-
+    gap: 30px;
   }
   .facts .left h1 {
     margin-top:50px;
@@ -604,7 +606,9 @@ p{
   .About_page .about, .Resume_page .about,.Services_page .about{
     font-size: 35px;
   }
-
+  .About_page p{
+    width: auto;
+  }
   .content .skils_page h2 {
     margin-left: 10px;
   }
