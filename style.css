@@ -367,6 +367,7 @@ p{
 .facts {
   gap: 100px;
   margin-top: 50px;
+  
 }
 
 .facts .left h1 {
@@ -572,23 +573,27 @@ p{
 
   .say_hi{
     font-size: 40px ;
-    font-weight: 300;
-    
-    line-height: 60px;
+    font-weight: 400;
+    line-height: -60px;
   }
   .spiin .to_project{
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 5px;
   }
   .spiin .arrow{
-    margin-left:100px ;
+    margin-left:auto ;
     margin-right:auto;
+  }
+  .facts{
+    display: flex;
+    justify-content: center;
+
   }
   .facts .left h1 {
     margin-top:50px;
     font-size: 48px;
-
 
   }
   .facts .right h1 {
@@ -608,7 +613,7 @@ p{
     margin-top: 10%;
   }
   .Services_page .cards_Services{
-    width: 340px;
+    width: 400px;
   }
   .content .skils_page .boxs .box{
     width: 49%;
