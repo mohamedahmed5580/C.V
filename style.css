@@ -559,8 +559,8 @@ p{
   .card-head{
     position: relative;
     margin-top: 70px;
-    width: 390px;
-    margin: 5px;
+    width: 380px;
+    margin: auto;
   }
   .card-head .iconss {
     margin-right: 0px;
