@@ -559,7 +559,8 @@ p{
   .card-head{
     position: relative;
     margin-top: 70px;
-    /* width: 350px; */
+    width: 395px;
+    margin: 5px;
   }
   .card-head .iconss {
     margin-right: 0px;
@@ -567,10 +568,6 @@ p{
 
   .content {
     margin-left: 10px;
-
-  }
-  .nav_btn{
-    margin-right: 100px;
   }
 
   .say_hi{
