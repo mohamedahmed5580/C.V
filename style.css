@@ -280,7 +280,7 @@ p{
   margin-right: 5px;
   color: var(--section-background);
 }
-.About_page,.Resume_page,.skils_page,.Services_page{
+.About_page,.Resume_page,.skils_page,.Services_page,.projects_page{
   margin-top: 5%;
 
 }
@@ -508,10 +508,7 @@ p{
   
   
 }
-
-
 .content .skils_page h2{
-
   font-size: 48px;
   font-family: 'Inter', sans-serif;
   padding-top: 50px;
@@ -548,7 +545,147 @@ p{
   font-size: 30px;
   font-weight: bold;
 }
+/* end skills */
+
+
+.content .skils_page .boxs .box:hover{
+  border: 2px solid var(--main-color);
+  width: 24%;
+  transition: 0.4s;
+}
+.content .skils_page .boxs .box:hover h5{
+  color:var(--main-color) ;
+}
+
+.content .skils_page .boxs .box h5{
+  color:var(--secondary-color) ;
+  font-size: 30px;
+  font-weight: bold;
+}
 /* end main content */
+/* start project */
+.projects_page .boxs{
+  display: flexbox;
+  text-align: center !important;
+  margin-top: 40px;
+  position: absolute;
+  
+  
+}
+.projects_page h2{
+  font-size: 48px;
+  font-family: 'Inter', sans-serif;
+  padding-top: 50px;
+  margin-left: 10px;
+  color: var(--secondary-color);
+}
+.projects_page h2 span{
+  color: var(--main-color) ;
+}
+.projects_page .boxs .box{
+  position: relative;
+  width: 770px;
+  height: 500px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  transition: .3s;
+  overflow: hidden;
+  margin-bottom: 100px;
+  
+}
+.projects_page .boxs .box .img_background{
+width: 100%;
+height: 410px;
+background: url(image/projects-background.jpg);
+background-size: cover;
+border-radius: 25px;
+z-index: 55;
+}
+.projects_page .boxs .box .img{
+  position: absolute;
+  display: block;
+  
+  width: 550px;
+  height: 410px;
+  border-radius: 25px;
+  margin-left: 120px;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: 120px;
+  z-index: 500;
+
+}
+.projects_page .boxs .box .cover{
+  position: absolute;
+  top: 0;
+  width: 770px;
+  height: 410px;
+  border-radius: 25px;
+  background-color: #1f1f1f78;
+  overflow: hidden;
+
+}
+.projects_page .boxs .box .cover .links,
+.projects_page .boxs .box-center .cover .links {
+  display: inline-block;
+  position: relative;
+  right: 250px;
+  top: 350px;
+  padding: 10px;
+  z-index: 50000;
+}
+.projects_page .boxs .box .cover .links .link,
+.projects_page .boxs .box-center .cover .links .link{
+  display: inline-block;
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: small;
+  padding: 10px;
+  background-color: var(--secondary2-color);
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+.projects_page .boxs .box .cover .links .link:hover,
+.projects_page .boxs .box-center .cover .links .link:hover{
+  background-color: var(--secondary-color);
+  color: var(--secondary2-color);
+}
+.projects_page .boxs .box .header-project{
+  margin-top:10px ;
+  color: var(--section-background);
+  padding: 5px;
+  text-align: left;
+ 
+
+}
+.projects_page .boxs .box .header-project .project-link:hover{
+  border-bottom: 1px solid var(--secondary-color);
+}
+.projects_page .boxs .box .header-project .project-link{
+  color: var(--section-background);
+  text-decoration: none;
+}
+.projects_page .boxs .box-center{
+  display: inline-block;
+  position: relative;
+  width: 400px;
+  height: 500px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  transition: .3s;
+  overflow: hidden;
+  margin-bottom: 100px;
+  
+}
+.projects_page .boxs .box-center .cover .img{
+width:370px;
+height: 373px;
+margin-left: 10px;
+margin-right: 10px;
+}
+
 /* start for phone */
 @media (max-width: 600px) {
   .body-overlay{
@@ -613,7 +750,7 @@ p{
     margin-left: 10px;
   }
 
-  .About_page,.Resume_page,.Services_page,.skils_page{
+  .About_page,.Resume_page,.Services_page,.skils_page,.projects_page{
     margin-top: 10%;
   }
   .Services_page .cards_Services{
@@ -641,7 +778,39 @@ p{
   .content .skils_page .boxs .box:hover h5{
     color:var(--main-color) ;
   }
-
+  .projects_page .boxs .box{
+    width: 395px;
+    left: 0;
+    right: 0;
+  }
+  .projects_page .boxs .box .img_background{
+    width: 100%;
+    height: 410px;
+    background: url(image/projects-background.jpg);
+    background-size: cover;
+    z-index: 55;
+    }
+    .projects_page .boxs .box .img{
+      position: absolute;
+      display: block;
+      width: auto;
+      height: 410px;
+      border-radius: 25px;
+      margin-left: 17px;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      margin-top: 50px;
+      z-index: 500;
+    }
+.projects_page .boxs .box .cover .links{
+  padding: 0;
+  }
+    .projects_page .boxs .box .header-project{
+      display: block;
+      text-align: left;
+      border-bottom: 1px solid var(--secondary-color);
+    }
 }
 
 /* end phone */
