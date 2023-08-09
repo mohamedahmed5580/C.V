@@ -687,7 +687,7 @@ margin-right: 10px;
 }
 
 /* start for phone */
-@media (max-width: 600px) {
+@media (max-width: 725px) {
   .body-overlay{
     width: min-content;
   }
