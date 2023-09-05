@@ -665,12 +665,12 @@ p {
 @media (max-width: 725px) {
 
   .card-head {
-    position: relative;
-    width: 97%;
-    margin-left: auto;
+    position:relative;
+    width: 395px;;
+    margin-left: 10px;
     margin-right: auto;
     left: 0;
-    right: 0;
+    right: 0
   }
   .card-head .iconss {
     margin-right: 0px;
