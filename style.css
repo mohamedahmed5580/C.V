@@ -666,7 +666,7 @@ p {
 
   .card-head {
     position:relative;
-    width: 385px;
+    width: 380px;
     margin-left: 10px;
     margin-right: auto;
     left: 0;
@@ -678,7 +678,7 @@ p {
 
   .navbar .nav-btn {
     display: block;
-    margin-right:10px;
+    margin-right:20px;
   }
   .content {
     margin-left: 10px;
@@ -737,7 +737,6 @@ p {
   }
   .content .skils_page .boxs .box {
     width: 49%;
-    /* margin-left: 0px; */
     margin-right: auto;
     justify-content: center;
     align-items: center;
@@ -758,9 +757,9 @@ p {
     color: var(--main-color);
   }
   .projects_page .boxs .box {
-    width: 380px;
+    width: 92%;
     display: block;
-    margin-left: 10px;
+    margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
