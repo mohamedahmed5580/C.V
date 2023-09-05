@@ -667,7 +667,7 @@ p {
   .card-head {
     position:relative;
     width: 95%;
-    margin-left: 10px;
+    margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0
@@ -678,7 +678,7 @@ p {
 
   .navbar .nav-btn {
     display: block;
-    margin-right:20px;
+    margin-right:50px;
   }
   .content {
     margin-left: 10px;
@@ -733,7 +733,7 @@ p {
     margin-top: 10%;
   }
   .Services_page .cards_Services {
-    width: 400px;
+    width: 380px;
   }
   .content .skils_page .boxs .box {
     width: 49%;
