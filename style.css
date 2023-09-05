@@ -666,7 +666,7 @@ p {
 
   .card-head {
     position:relative;
-    width: 395px;;
+    width: 385px;
     margin-left: 10px;
     margin-right: auto;
     left: 0;
@@ -678,7 +678,7 @@ p {
 
   .navbar .nav-btn {
     display: block;
-    /* margin-right:500px; */
+    margin-right:10px;
   }
   .content {
     margin-left: 10px;
