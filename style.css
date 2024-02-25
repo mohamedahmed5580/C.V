@@ -488,8 +488,6 @@ p {
   display: flexbox;
   text-align: center !important;
   margin-top: 40px;
-  margin-left: -5px;
-  margin-right: 5px;
 }
 .content .skils_page h2 {
   font-size: 48px;
@@ -547,11 +545,10 @@ p {
 /* end main content */
 /* start project */
 .projects_page .boxs {
-  display: block;
+  display: flexbox;
+  text-align: center !important;
   margin-top: 40px;
   position: absolute;
-  margin-left: auto;
-  margin-left: auto;
 }
 .projects_page h2 {
   font-size: 48px;
@@ -584,7 +581,6 @@ p {
 .projects_page .boxs .box .img {
   position: absolute;
   display: block;
-
   width: 550px;
   height: 410px;
   border-radius: 25px;
@@ -629,7 +625,7 @@ p {
 .projects_page .boxs .box-center .cover .links .link:hover {
   background-color: var(--secondary-color);
   color: var(--secondary2-color);
-}
+} 
 .projects_page .boxs .box .header-project {
   margin-top: 10px;
   color: var(--section-background);
@@ -652,7 +648,7 @@ p {
   margin-bottom: 10px;
   transition: 0.3s;
   overflow: hidden;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 .projects_page .boxs .box-center .cover .img {
   width: 370px;
@@ -663,14 +659,16 @@ p {
 
 /* start for phone */
 @media (max-width: 725px) {
-
+  .body-overlay {
+    width: min-content;
+  }
   .card-head {
-    position:relative;
-    width: 95%;
+    position: relative;
+    width: 99%;
     margin-left: auto;
     margin-right: auto;
     left: 0;
-    right: 0
+    right: 0;
   }
   .card-head .iconss {
     margin-right: 0px;
@@ -678,7 +676,7 @@ p {
 
   .navbar .nav-btn {
     display: block;
-    margin-right:50px;
+    /* margin-right:500px; */
   }
   .content {
     margin-left: 10px;
@@ -733,10 +731,11 @@ p {
     margin-top: 10%;
   }
   .Services_page .cards_Services {
-    width: 380px;
+    width: 400px;
   }
   .content .skils_page .boxs .box {
     width: 49%;
+    margin-left: auto;
     margin-right: auto;
     justify-content: center;
     align-items: center;
@@ -757,16 +756,9 @@ p {
     color: var(--main-color);
   }
   .projects_page .boxs .box {
-    width: 92%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 395px;
     left: 0;
     right: 0;
-  }
-  .projects_page .boxs .box-center .cover .img {
-    margin-left: 5px;
-    margin-right: 5px;
   }
   .projects_page .boxs .box .img_background {
     width: 100%;
@@ -781,7 +773,7 @@ p {
     width: auto;
     height: 410px;
     border-radius: 25px;
-    margin-left: 12px;
+    margin-left: 17px;
     margin-right: auto;
     left: 0;
     right: 0;
